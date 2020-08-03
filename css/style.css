@@ -1,0 +1,58 @@
+body {
+  font-family: 'Red Rose', cursive;
+
+}
+
+.carousel .content {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #21212100, #1b1d21, #1b1d21),
+    url('../images/profile.jpeg');
+  background-size: contain;
+}
+
+
+.carousel .caption {
+  color: #d3d3d3;
+  width: 100%;
+
+  position: absolute;
+  bottom: 10vh;
+}
+
+.fullH {
+  height: 100vh;
+}
+
+.fullW {
+  width: 100%;
+}
+
+.getFocus {
+  animation-name: example;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes example {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+
+.caption button {
+  border-radius: 500px;
+  width: 70%;
+}
+
+.bottombar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

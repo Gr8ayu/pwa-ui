@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body class="blue-grey darken-4">
+  <div id="preload" class=" preload valign-wrapper" style="height: 100vh; width: 100%;">
+    <div class=" center " style="width: 100%;">
+      <div class="preloader-wrapper active">
+        <div class="spinner-layer spinner-red-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="content" class="blue-grey darken-4 fullH" style="display: none; background: #1b1d21;">
+    <div class="container">
+
+      <div class=" center  px-6">
+        <div class=" card h-56 rounded-lg" style="background: #0f1117;">
+          hello
+        </div>
+
+      </div>
+
+      <div class=" center  px-6" >
+
+        <div class=" card h-56 rounded-lg pt-4 " style="background: #0f1117;">
+          <h1 class="white-text text-4xl">This or That ?</h1>
+          <span class="pink-text text-lighten-1">sss</span>
+        </div>
+
+      </div>
+      <div class=" center  px-6">
+        <div class=" card h-56 rounded-lg " style="background: #0f1117;">
+          <h1 class="white-text">This or That ?</h1>
+        </div>
+
+      </div>
+      <div class=" center  px-6">
+        <div class=" card h-56 rounded-lg " style="background: #0f1117;">
+          <h1 class="white-text">This or That ?</h1>
+        </div>
+
+      </div>
+      <div class=" center  px-6">
+        <div class=" card h-56 rounded-lg " style="background: #0f1117;">
+          <h1 class="white-text">This or That ?</h1>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <div class="bottombar bg-blue-500">
+      <ul class="flex">
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-blue-500 rounded py-2  bg-blue-500 hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">home</i></a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-blue-500 rounded py-2 bg-blue-500 hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">search</i></a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-blue-500 rounded py-2 bg-blue-500 hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">panorama</i></a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-blue-500 rounded py-2 bg-blue-500 hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">person</i></a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-blue-500 rounded py-2 bg-blue-500 hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">settings</i></a>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <script>
+    window.onload = function () {
+      document.getElementById("preload").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    }
+  </script>
+
+
+
+</body>
+
+</html>
