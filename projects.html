@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body class="blue-grey darken-4">
+  <div id="preload" class=" preload valign-wrapper" style="height: 100vh; ">
+    <div class=" center " style="width: 100%;">
+      <div class="preloader-wrapper active">
+        <div class="spinner-layer spinner-red-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="loadedContent" class="blue-grey darken-4 fullH" style="background: #1b1d21;">
+    <div class="container">
+
+
+
+      <div class=" center  px-6">
+
+        <div class=" card rounded-lg py-16 " style="background: #0f1117;">
+          <div class="container ">
+            <!-- <div class="row">
+              <div class="col s6">
+                XXXXX
+              </div>
+              <div class="col s6">
+                YYYYYY
+              </div>
+            </div> -->
+          </div>
+          <h1 class="white-text text-4xl">PROJECTS</h1>
+          <span class="pink-text text-lighten-1">what's your favourate ? </span>
+        </div>
+
+        <div class="">
+          <ul class="collection with-header">
+            <li class="collection-header">
+              <h4>First Names</h4>
+            </li>
+            <li class="collection-item avatar">
+              <img src="images/profile.jpeg" class="circle" alt="">
+              <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+            </li>
+            <li class="collection-item">
+              <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+            </li>
+            <li class="collection-item">
+              <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+            </li>
+            <li class="collection-item">
+              <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bottombar bg-blue-500">
+      <ul class="flex">
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-blue-500 rounded py-2  bg-blue-500 hover:bg-blue-700 text-white"
+            href="./walkthrough.html"><i class="material-icons">home</i></a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-blue-500 rounded py-2 bg-blue-500 hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">search</i></a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-blue-500 rounded py-2 bg-blue-500 hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">panorama</i></a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-blue-500 rounded py-2 bg-blue-500 hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">person</i></a>
+        </li>
+        <li class="flex-1 ">
+          <a class="text-center block border border-blue-500 rounded py-2 bg-blue-500 hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">settings</i></a>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <script>
+    window.onload = function () {
+      document.getElementById("preload").style.display = "none";
+      // document.getElementById("loadedContent").style.display = "block";
+    }
+  </script>
+  <script>
+    var elems = document.querySelectorAll('.carousel');
+    var opt = {
+
+      numVisible: 1,
+      fullWidth: true
+    }
+    var instances = M.Carousel.init(elems, opt);
+  </script>
+
+
+</body>
+
+</html>
