@@ -35,15 +35,43 @@
     </div>
   </div>
 
+  <!--Carousal 1-->
   <div id="loadedContent" class="blue-grey darken-4 fullH" style="background: #1b1d21;">
     <div class="container">
 
-      <div class=" center pt-3  px-6">
-        <div class=" card h-56 rounded-lg" style="background: #0f1117; overflow: hidden;">
-          <img class="object-cover" src="images/watch.jpg" alt="">
+      <div class="carousel carousel-slider center">
+        <div id="xxx">
+          <div class="carousel-item black-text item1" style="transform: none;" href="#one!">
+            <h2 style="font-size: 2.25rem;">First Panel</h2>
+            <p class="black-text">This is your first panel</p>
+            <div class="center">
+              <a class="btn waves-effect black-text darken-text-2">button1</a>
+            </div>
+          </div>
+          <div class="carousel-item black-text item2" href="#two!">
+            <h2>Second Panel</h2>
+            <p class="black-text">This is your second panel</p>
+            <div class="center">
+              <a class="btn waves-effect black-text darken-text-2">button2</a>
+            </div>
+          </div>
+          <div class="carousel-item black-text item3" href="#three!">
+            <h2>Third Panel</h2>
+            <p class="black-text">This is your third panel</p>
+            <div class="center">
+              <a class="btn waves-effect black-text darken-text-2">button3</a>
+            </div>
+          </div>
+          <div class="carousel-item black-text item4" href="#four!">
+            <h2>Fourth Panel</h2>
+            <p class="black-text">This is your fourth panel</p>
+            <div class="center">
+              <a class="btn waves-effect black-text darken-text-2">button4</a>
+            </div>
+          </div>
         </div>
-
       </div>
+      <!--Carousel 1 Over-->
 
       <div class=" center  px-6">
 
@@ -53,8 +81,8 @@
         </div>
       </div>
 
-      <!-- carousel -->
-      <div class="carousel carousel-slider center " style="max-height: 260px;">
+      <!-- carousel 2 -->
+      <div class="carousel carousel-slider center " style="max-height: auto;">
 
         <div class=" carousel-item px-6" style="width: 100%;">
           <div class="rounded-lg p-6 " style="background: #0f1117;">
@@ -70,18 +98,28 @@
         </div>
 
         <div class=" carousel-item px-6" style="width: 100%;">
-          <div class="rounded-lg  " style="background: #0f1117;">
+          <div class="rounded-lg  p-6" style="background: #0f1117;">
             <h1 class="white-text text-4xl">App Development</h1>
             <span class="pink-text text-lighten-1">what's your favourate ? </span>
+            <p class="white-text m-3">
+              Ads are a very important part of mobile interfaces, they're a great source of revenue. We've integrated,
+              the best, the most correct and widely approved ads in our item.
+            </p>
+            <button class="btn "> Select </button>
           </div>
 
         </div>
 
 
         <div class=" carousel-item px-6" style="width: 100%;">
-          <div class="rounded-lg  " style="background: #0f1117;">
+          <div class="rounded-lg p-6" style="background: #0f1117;">
             <h1 class="white-text text-4xl">Machine Learning</h1>
             <span class="pink-text text-lighten-1">what's your favourate ? </span>
+            <p class="white-text m-3">
+              Ads are a very important part of mobile interfaces, they're a great source of revenue. We've integrated,
+              the best, the most correct and widely approved ads in our item.
+            </p>
+            <button class="btn "> Select </button>
           </div>
 
         </div>
@@ -90,7 +128,7 @@
 
 
       </div>
-      <!-- carousel end -->
+      <!-- carousel 2 end -->
 
 
       <div class=" center  px-6">
@@ -160,15 +198,6 @@
 
         </div>
       </div>
-
-      <div class=" center pt-3  px-6">
-        <div class=" card h-56 rounded-lg" style="background: #0f1117; overflow: hidden;">
-          <img class="object-cover" src="images/watch.jpg" alt="">
-        </div>
-
-      </div>
-
-
     </div>
 
     <div class="bottombar bg-gray-800">
@@ -221,7 +250,7 @@
     var opt = {
 
       numVisible: 1,
-      fullWidth: true
+      fullWidth: false
     }
     var instances = M.Carousel.init(elems, opt);
   </script>

@@ -56,3 +56,54 @@ body {
   width: 100%;
   bottom: 0;
 }
+
+
+
+
+
+
+
+/* Carousal */
+.item1 {
+  background-image: linear-gradient(180deg, transparent, rgb(31, 30, 30)), url('../images/img1.jpg');
+  background-size: cover;
+}
+
+.item2 {
+  background-image: linear-gradient(180deg, transparent, rgb(31, 30, 30)), url('../images/img2.jpg');
+  background-size: cover;
+}
+
+.item3 {
+  background-image: linear-gradient(180deg, transparent, rgb(31, 30, 30)), url('../images/img3.jpg');
+  background-size: cover;
+}
+
+.item4 {
+  background-image: linear-gradient(180deg, transparent, rgb(31, 30, 30)), url('../images/img4.jpg');
+  background-size: cover;
+}
+
+.item5 {
+  background-image: linear-gradient(180deg, transparent, rgb(31, 30, 30)), url('../images/img5.jpg');
+  background-size: cover;
+}
+
+/* Button Corners and position */
+.btn {
+  border-radius: 10px;
+  top: 100px;
+}
+
+/* Play with the carousel border and margin */
+#xxx .carousel-item {
+  width: auto;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: auto;
+  min-height: auto;
+  border-radius: 20px;
+  margin: 15px 40px 0 0;
+}
