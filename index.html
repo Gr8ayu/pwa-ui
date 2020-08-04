@@ -35,39 +35,23 @@
     </div>
   </div>
 
-  <!--Carousal 1-->
   <div id="loadedContent" class="blue-grey darken-4 fullH" style="background: #1b1d21;">
     <div class="container">
 
-      <div class="carousel carousel-slider center">
+      <!--Carousal 1-->
+      <div id="car-1" class="carousel carousel-slider center">
         <div id="xxx">
-          <div class="carousel-item black-text item1" style="transform: none;" href="#one!">
-            <h2 style="font-size: 2.25rem;">First Panel</h2>
-            <p class="black-text">This is your first panel</p>
-            <div class="center">
-              <a class="btn waves-effect black-text darken-text-2">button1</a>
-            </div>
+          <div class="carousel-item white-text item1">
+            <h2>First Panel</h2>
+            <p class="white-text">This is your first panel</p>
           </div>
-          <div class="carousel-item black-text item2" href="#two!">
+          <div class="carousel-item white-text item2">
             <h2>Second Panel</h2>
-            <p class="black-text">This is your second panel</p>
-            <div class="center">
-              <a class="btn waves-effect black-text darken-text-2">button2</a>
-            </div>
+            <p class="white-text">This is your second panel</p>
           </div>
-          <div class="carousel-item black-text item3" href="#three!">
+          <div class="carousel-item white-text item3" href="#three!">
             <h2>Third Panel</h2>
-            <p class="black-text">This is your third panel</p>
-            <div class="center">
-              <a class="btn waves-effect black-text darken-text-2">button3</a>
-            </div>
-          </div>
-          <div class="carousel-item black-text item4" href="#four!">
-            <h2>Fourth Panel</h2>
-            <p class="black-text">This is your fourth panel</p>
-            <div class="center">
-              <a class="btn waves-effect black-text darken-text-2">button4</a>
-            </div>
+            <p class="white-text">This is your third panel</p>
           </div>
         </div>
       </div>
@@ -85,7 +69,7 @@
       <div class="carousel carousel-slider center " style="max-height: auto;">
 
         <div class=" carousel-item px-6" style="width: 100%;">
-          <div class="rounded-lg p-6 " style="background: #0f1117;">
+          <div class="rounded-lg p-6" style="background: #0f1117;">
             <h1 class="white-text text-4xl">Web Development</h1>
             <span class="pink-text text-lighten-1">what's your favourate ? </span>
             <p class="white-text m-3">
@@ -244,9 +228,15 @@
   <script>
     var elems = document.querySelectorAll('.carousel');
     var opt = {
-
-      numVisible: 1,
-      fullWidth: false
+      duration: 200, // ms
+      dist: 20, // zoom scale TODO: make this more intuitive as an option
+      shift: 0, // spacing for center image
+      padding: 0, // Padding between non center items
+      numVisible: 5, // Number of visible items in carousel
+      fullWidth: false, // Change to full width styles
+      indicators: false, // Toggle indicators
+      noWrap: false, // Don't wrap around and cycle through items.
+      onCycleTo: null
     }
     var instances = M.Carousel.init(elems, opt);
   </script>

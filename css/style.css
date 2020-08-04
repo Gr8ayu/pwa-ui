@@ -65,34 +65,27 @@ body {
 
 /* Carousal */
 .item1 {
-  background-image: radial-gradient(transparent, rgb(31, 30, 30)), url('../images/img1.jpg');
+  background-image: radial-gradient(transparent, #000), url('../images/img1.jpg');
   background-size: cover;
 }
 
 .item2 {
-  background-image: radial-gradient(180deg, transparent, rgb(31, 30, 30)), url('../images/img2.jpg');
+  background-image: radial-gradient(transparent, #000), url('../images/img2.jpg');
   background-size: cover;
 }
 
 .item3 {
-  background-image: radial-gradient(180deg, transparent, rgb(31, 30, 30)), url('../images/img3.jpg');
+  background-image: radial-gradient(transparent, #000), url('../images/img3.jpg');
   background-size: cover;
 }
 
-.item4 {
-  background-image: radial-gradient(180deg, transparent, rgb(31, 30, 30)), url('../images/img4.jpg');
-  background-size: cover;
+#car-1 {
+  height: 250px;
 }
 
-.item5 {
-  background-image: radial-gradient(180deg, transparent, rgb(31, 30, 30)), url('../images/img5.jpg');
-  background-size: cover;
-}
-
-/* Button Corners and position */
-.btn {
-  border-radius: 10px;
-  top: 100px;
+#xxx h2 {
+  margin: 120px auto auto auto;
+  font-size: xx-large;
 }
 
 /* Play with the carousel border and margin */
@@ -102,8 +95,9 @@ body {
   left: 0px;
   top: 0px;
   bottom: 0px;
-  height: auto;
+  height: 225px;
   min-height: auto;
   border-radius: 10px;
   margin: 15px 40px 0 0;
+  /* max-height: 200px; */
 }
