@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <div id="loadedContent" class="blue-grey darken-4 fullH" style=" background: #1b1d21;">
+  <div id="loadedContent" class="blue-grey darken-4 fullH" style="background: #1b1d21;">
     <div class="container">
 
       <div class=" center pt-3  px-6">
@@ -54,7 +54,7 @@
       </div>
 
       <!-- carousel -->
-      <div class="carousel carousel-slider center" style="width: 100%;">
+      <div class="carousel carousel-slider red center ">
 
         <div class=" carousel-item px-6" style="width: 100%;">
           <div class="rounded-lg p-6 " style="background: #0f1117;">
@@ -70,7 +70,7 @@
         </div>
 
         <div class=" carousel-item px-6" style="width: 100%;">
-          <div class="rounded-lg h-56 " style="background: #0f1117;">
+          <div class="rounded-lg  " style="background: #0f1117;">
             <h1 class="white-text text-4xl">App Development</h1>
             <span class="pink-text text-lighten-1">what's your favourate ? </span>
           </div>
@@ -79,7 +79,7 @@
 
 
         <div class=" carousel-item px-6" style="width: 100%;">
-          <div class="rounded-lg h-56 " style="background: #0f1117;">
+          <div class="rounded-lg  " style="background: #0f1117;">
             <h1 class="white-text text-4xl">Machine Learning</h1>
             <span class="pink-text text-lighten-1">what's your favourate ? </span>
           </div>
@@ -89,6 +89,38 @@
 
 
 
+      </div>
+      <!-- carousel end -->
+
+
+      <div class=" center  px-6">
+
+        <div class=" card h-56 rounded-lg pt-4 " style="background: #0f1117;">
+          <h1 class="white-text text-4xl">Packed with Goodies</h1>
+          <span class="pink-text text-lighten-1">The Absolute Best Products & Care for You </span>
+          <p class="white-text m-3">
+            Over 10 years of Experience in Building Gorgeous Products only for you! We are Envato Elite.
+          </p>
+          <div class="divider grey darken-4"></div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col s6">
+                one
+              </div>
+              <div class="col s6">
+                two
+              </div>
+              <div class="col s6">
+                three
+              </div>
+              <div class="col s6">
+                four
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
       <div class=" center pt-3  px-6">
@@ -132,12 +164,14 @@
   <script>
     window.onload = function () {
       document.getElementById("preload").style.display = "none";
-      document.getElementById("loadedContent").style.display = "block";
+      // document.getElementById("loadedContent").style.display = "block";
     }
   </script>
   <script>
     var elems = document.querySelectorAll('.carousel');
     var opt = {
+
+      numVisible: 1,
       fullWidth: true
     }
     var instances = M.Carousel.init(elems, opt);
