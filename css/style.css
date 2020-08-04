@@ -16,7 +16,7 @@ body {
   width: 100%;
 
   position: absolute;
-  bottom: 10vh;
+  bottom: 15vh;
 }
 
 .fullH {
@@ -24,7 +24,7 @@ body {
 }
 
 .fullW {
-  width: 100%;
+  width: 100vw;
 }
 
 .getFocus {

@@ -17,7 +17,7 @@
 </head>
 
 <body class="blue-grey darken-4">
-  <div id="preload" class=" preload valign-wrapper" style="height: 100vh; width: 100%;">
+  <div id="preload" class=" preload valign-wrapper" style="height: 100vh; ">
     <div class=" center " style="width: 100%;">
       <div class="preloader-wrapper active">
         <div class="spinner-layer spinner-red-only">
@@ -38,9 +38,9 @@
   <div id="content" class="blue-grey darken-4 fullH" style="display: none; background: #1b1d21;">
     <div class="container">
 
-      <div class=" center  px-6">
-        <div class=" card h-56 rounded-lg" style="background: #0f1117;">
-          hello
+      <div class=" center pt-3  px-6">
+        <div class=" card h-56 rounded-lg" style="background: #0f1117; overflow: hidden;">
+          <img class="object-cover" src="images/watch.jpg" alt="">
         </div>
 
       </div>
@@ -49,29 +49,46 @@
 
         <div class=" card h-56 rounded-lg pt-4 " style="background: #0f1117;">
           <h1 class="white-text text-4xl">This or That ?</h1>
-          <span class="pink-text text-lighten-1">sss</span>
+          <span class="pink-text text-lighten-1">what's your favourate ? </span>
+        </div>
+      </div>
+      xx
+      <div class="carousel red" style="width: 100%;">
+        <div class=" carousel-item blue" style="width: 100%; height: 100%; ">
+          <div class="rounded-lg " style="background: #0f1117;">
+            <h1 class="white-text">BOX 1</h1>
+          </div>
+
+        </div>
+
+        <div class=" carousel-item  px-6 yellow" style="width: 100%; height: 100%; ">
+          <div class="  rounded-lg " style="background: #0f1117;">
+            <h1 class="white-text">BOX 2</h1>
+          </div>
+
+        </div>
+
+        <div class=" carousel-item  px-6 green" style="width: 100%; height: 100%; ">
+          <div class="   rounded-lg " style="background: #0f1117;">
+            <h1 class="white-text">BOX 3</h1>
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+
+      xx
+
+      <div class=" center pt-3  px-6">
+        <div class=" card h-56 rounded-lg" style="background: #0f1117; overflow: hidden;">
+          <img class="object-cover" src="images/watch.jpg" alt="">
         </div>
 
       </div>
-      <div class=" center  px-6">
-        <div class=" card h-56 rounded-lg " style="background: #0f1117;">
-          <h1 class="white-text">This or That ?</h1>
-        </div>
-
-      </div>
-      <div class=" center  px-6">
-        <div class=" card h-56 rounded-lg " style="background: #0f1117;">
-          <h1 class="white-text">This or That ?</h1>
-        </div>
-
-      </div>
-      <div class=" center  px-6">
-        <div class=" card h-56 rounded-lg " style="background: #0f1117;">
-          <h1 class="white-text">This or That ?</h1>
-        </div>
-
-      </div>
-
 
 
     </div>
@@ -94,7 +111,7 @@
           <a class="text-center block border border-blue-500 rounded py-2 bg-blue-500 hover:bg-blue-700 text-white"
             href="#"><i class="material-icons">person</i></a>
         </li>
-        <li class="flex-1 mr-2">
+        <li class="flex-1 ">
           <a class="text-center block border border-blue-500 rounded py-2 bg-blue-500 hover:bg-blue-700 text-white"
             href="#"><i class="material-icons">settings</i></a>
         </li>
@@ -110,7 +127,16 @@
       document.getElementById("content").style.display = "block";
     }
   </script>
-
+  <script>
+    var elems = document.querySelectorAll('.carousel');
+    var opt = {
+      dist: 0,
+      indicators: true,
+      numVisible: 1,
+      fullWidth: true
+    }
+    var instances = M.Carousel.init(elems, opt);
+  </script>
 
 
 </body>
