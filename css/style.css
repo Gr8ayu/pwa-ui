@@ -57,7 +57,14 @@ body {
   bottom: 0;
 }
 
+.bg-primary {
+  background-color: #0f1117;
+}
 
+.bg-secondary {
+  background-color: #191f29;
+  border-color: #191f29;
+}
 
 
 
@@ -80,13 +87,9 @@ body {
 }
 
 #car-1 {
-  height: 250px;
+  height: 260px;
 }
 
-#xxx h2 {
-  margin: 120px auto auto auto;
-  font-size: xx-large;
-}
 
 /* Play with the carousel border and margin */
 #xxx .carousel-item {
@@ -100,4 +103,8 @@ body {
   border-radius: 10px;
   margin: 15px 40px 0 0;
   /* max-height: 200px; */
+}
+
+.carousel2 {
+  height: 260px;
 }
