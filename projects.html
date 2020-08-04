@@ -58,27 +58,40 @@
         </div>
 
         <div class="">
-          <ul class="collection with-header">
-            <li class="collection-header">
-              <h4>First Names</h4>
+          <ul class="collapsible rounded-lg white-text" style="border : 0px">
+            <li>
+              <div class="collapsible-header white-text " style="background:#0f1117 ;">
+                <i class="material-icons blue-text">filter_drama</i>
+                Cloud Computing
+                <i class="material-icons right grey-text">arrow_drop_down</i>
+
+              </div>
+              <div class="collapsible-body blue-grey darken-3"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
-            <li class="collection-item avatar">
-              <img src="images/profile.jpeg" class="circle" alt="">
-              <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
-            <li class="collection-item">
-              <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
-            </li>
-            <li class="collection-item">
-              <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
-            </li>
-            <li class="collection-item">
-              <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
           </ul>
         </div>
       </div>
 
+    </div>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
     </div>
 
     <div class="bottombar bg-blue-500">
@@ -123,6 +136,13 @@
       fullWidth: true
     }
     var instances = M.Carousel.init(elems, opt);
+
+    var collaps = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(collaps, {});
+
+
+    var modal = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(modal, {});
   </script>
 
 
