@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="bg-secondary">
+<body class="bg-secondary darken-4">
   <div id="preload" class=" preload valign-wrapper" style="height: 100vh; ">
     <div class=" center " style="width: 100%;">
       <div class="preloader-wrapper active">
@@ -35,38 +35,79 @@
     </div>
   </div>
 
-  <div id="loadedContent" class="bg-secondary fullH">
+  <div id="loadedContent" class=" darken-4 fullH">
     <div class="container">
 
       <!--Carousal 1-->
-      <div id="car-1" class="carousel carousel1 carousel-slider center">
+      <div id="car-1" class="carousel carousel-slider center">
         <div id="xxx">
           <div class="carousel-item white-text item1">
-            <h1 class="mt-32 white-text text-4xl">First Panel</h1>
+            <h2>First Panel</h2>
             <p class="white-text">This is your first panel</p>
           </div>
           <div class="carousel-item white-text item2">
-            <h1 class="mt-32 white-text text-4xl">Second Panel</h1>
+            <h2>Second Panel</h2>
             <p class="white-text">This is your second panel</p>
           </div>
           <div class="carousel-item white-text item3" href="#three!">
-            <h1 class="mt-32 white-text text-4xl">Third Panel</h1>
+            <h2>Third Panel</h2>
             <p class="white-text">This is your third panel</p>
           </div>
         </div>
       </div>
       <!--Carousel 1 Over-->
 
-      <div class=" center  px-6 pt-1">
-
-        <div class=" card h-56 rounded-lg pt-4 bg-primary">
-          <h1 class="white-text text-4xl">This or That ?</h1>
-          <span class="pink-text text-lighten-1">what's your favourate ? </span>
-        </div>
-      </div>
 
       <!-- carousel 2 -->
-      <div class="carousel carousel2 carousel-slider center fullW" style="max-height: 330px;">
+      <div id="car-2" class="carousel carousel-slider center " style="max-height: auto;">
+
+        <div class=" carousel-item px-6" style="width: 100%;">
+          <div class="rounded-lg p-6 bg-primary">
+            <h1 class="white-text text-4xl">Web Development</h1>
+            <span class="pink-text text-lighten-1">what's your favourate ? </span>
+            <p class="white-text m-3">
+              Ads are a very important part of mobile interfaces, they're a great source of revenue.
+            </p>
+            <i class="material-icons medium" style="color: white;">class</i>&emsp;
+            <i class="material-icons medium" style="color: white;">school</i>&emsp;
+            <i class="material-icons medium" style="color: white;">shop</i>
+
+          </div>
+
+        </div>
+
+        <div class=" carousel-item px-6" style="width: 100%;">
+          <div class="rounded-lg  p-6 bg-primary">
+            <h1 class="white-text text-4xl">App Development</h1>
+            <span class="pink-text text-lighten-1">what's your favourate ? </span>
+            <p class="white-text m-3">
+              Ads are a very important part of mobile interfaces, they're a great source of revenue.
+            </p>
+            <i class="material-icons medium" style="color: white;">class</i>&emsp;
+            <i class="material-icons medium" style="color: white;">school</i>&emsp;
+            <i class="material-icons medium" style="color: white;">shop</i>
+          </div>
+        </div>
+
+
+        <div class=" carousel-item px-6" style="width: 100%;">
+          <div class="rounded-lg p-6 bg-primary">
+            <h1 class="white-text text-4xl">Machine Learning</h1>
+            <span class="pink-text text-lighten-1">what's your favourate ? </span>
+            <p class="white-text m-3">
+              Ads are a very important part of mobile interfaces, they're a great source of revenue.
+            </p>
+            <i class="material-icons medium" style="color: white;">class</i>&emsp;
+            <i class="material-icons medium" style="color: white;">school</i>&emsp;
+            <i class="material-icons medium" style="color: white;">shop</i>
+          </div>
+
+        </div>
+      </div>
+      <!-- carousel 2 end -->
+
+      <!-- carousel 3 -->
+      <div id="car-2" class="carousel carousel-slider center " style="max-height: auto;">
 
         <div class=" carousel-item px-6" style="width: 100%;">
           <div class="rounded-lg p-6 bg-primary">
@@ -108,13 +149,13 @@
 
         </div>
       </div>
-      <!-- carousel 2 end -->
+      <!-- carousel 3 end -->
 
+      <!-- DashBoard Starts -->
+      <div class=" center  px-6 mt-6">
 
-      <div class=" center mb-20 px-6">
-
-        <div class=" card rounded-lg pt-4 bg-primary">
-          <h1 class="white-text text-4xl">Packed with Goodies</h1>
+        <div class=" card rounded-lg m-0 bg-primary">
+          <h1 class="white-text text-4xl pt-6">Packed with Goodies</h1>
           <span class="pink-text text-lighten-1">The Absolute Best Products & Care for You </span>
           <p class="white-text m-3">
             Over 10 years of Experience in Building Gorgeous Products only for you! We are Envato Elite.
@@ -122,55 +163,58 @@
           <div class="divider grey darken-4"></div>
 
           <div class="container">
-            <div class="row p-6">
-              <div class="col s6  ">
-                <div class="w-full text-white">
-                  <i class="material-icons Medium blue-text ">
-                    speaker_notes
-                  </i>
-                  <p class="text-2xl">Blogs</p>
-                  <p class="white-text m-3">
-                    Grab your goodies today
-                  </p>
+            <div class="row p-6 ">
+              <div class="flex">
+                <div class="col s6  ">
+                  <div class="w-full text-white">
+                    <i class="material-icons medium blue-text ">
+                      speaker_notes
+                    </i>
+                    <p class="text-2xl">My Tech blogs</p>
+                    <p class="white-text m-3">
+                      Grab your goodies today
+                    </p>
 
+                  </div>
+                </div>
+                <div class="col s6 ">
+                  <div class="w-full text-white">
+                    <i class="material-icons Medium brown-text ">
+                      double_arrow
+                    </i>
+                    <p class="text-2xl">Plans</p>
+                    <p class="white-text m-3">
+                      Grab your goodies today
+                    </p>
+
+                  </div>
                 </div>
               </div>
-              <div class="col s6 ">
-                <div class="w-full text-white">
-                  <i class="material-icons Medium brown-text ">
-                    double_arrow
-                  </i>
-                  <p class="text-2xl">Plans</p>
-                  <p class="white-text m-3">
-                    Grab your goodies today
-                  </p>
+              <div class="flex">
+                <div class="col s6 ">
+                  <div class="w-full text-white">
+                    <i class="material-icons Medium yellow-text ">
+                      sports_esports
+                    </i>
+                    <p class="text-2xl">Hobbies</p>
+                    <p class="white-text m-3">
+                      Grab your goodies today
+                    </p>
 
+                  </div>
                 </div>
-              </div>
 
-              <div class="col s6 ">
-                <div class="w-full text-white">
-                  <i class="material-icons Medium yellow-text ">
-                    sports_esports
-                  </i>
-                  <p class="text-2xl">Hobbies</p>
-                  <p class="white-text m-3">
-                    Grab your goodies today
-                  </p>
+                <div class="col s6 ">
+                  <div class="w-full text-white">
+                    <i class="material-icons Medium green-text ">
+                      done_outline
+                    </i>
+                    <p class="text-2xl">Amazing Prize</p>
+                    <p class="white-text m-3">
+                      Grab your goodies today
+                    </p>
 
-                </div>
-              </div>
-
-              <div class="col s6 ">
-                <div class="w-full text-white">
-                  <i class="material-icons Medium green-text ">
-                    done_outline
-                  </i>
-                  <p class="text-2xl">Amazing Prize</p>
-                  <p class="white-text m-3">
-                    Grab your goodies today
-                  </p>
-
+                  </div>
                 </div>
               </div>
             </div>
@@ -179,36 +223,47 @@
         </div>
       </div>
     </div>
+    <!-- DashBoard Ends -->
 
-    <div class="bottombar bg-secondary">
+
+    <div class=" center  px-6">
+
+      <div class=" card h-56 rounded-lg pt-4  bg-primary">
+        <h1 class="white-text text-4xl">This or That ?</h1>
+        <span class="pink-text text-lighten-1">what's your favourate ? </span>
+      </div>
+    </div>
+
+    <!-- BottomBar -->
+    <div class="bottombar  bg-secondary" style="position: sticky;">
       <ul class="flex">
         <li class="flex-1 mr-2 center ">
-          <a class="text-center block border border-gray-800 rounded  py-2 bg-gray-800 hover:bg-blue-700 text-white"
+          <a class="text-center block border border-gray-800 rounded  py-2  bg-secondary hover:bg-blue-700 text-white"
             href="./walkthrough.html"><i class="material-icons">home</i>
             <p>Home</p>
           </a>
 
         </li>
         <li class="flex-1 mr-2">
-          <a class="text-center block border border-gray-800 rounded py-2 bg-secondary hover:bg-blue-700 text-white"
+          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
             href="./projects.html"><i class="material-icons">search</i>
             <p>Search</p>
           </a>
         </li>
         <li class="flex-1 mr-2">
-          <a class="text-center block border border-gray-800 rounded py-2 bg-secondary hover:bg-blue-700 text-white"
-            href="#"><i class="material-icons">panorama</i>
+          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
+            href="pages.html"><i class="material-icons">panorama</i>
             <p>Gallery</p>
           </a>
         </li>
         <li class="flex-1 mr-2">
-          <a class="text-center block border border-gray-800 rounded py-2 bg-secondary hover:bg-blue-700 text-white"
+          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
             href="#"><i class="material-icons">person</i>
             <p>Profile</p>
           </a>
         </li>
         <li class="flex-1 ">
-          <a class="text-center block border border-gray-800 rounded py-2 bg-secondary hover:bg-blue-700 text-white"
+          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
             href="#"><i class="material-icons">settings</i>
             <p>Settings</p>
           </a>
@@ -226,12 +281,12 @@
     }
   </script>
   <script>
-    var elems = document.querySelectorAll('.carousel1');
+    var elems = document.querySelectorAll('.carousel');
     var opt = {
-      duration: 200, // ms
-      dist: 20, // zoom scale TODO: make this more intuitive as an option
+      duration: 75, // ms
+      dist: 30, // zoom scale TODO: make this more intuitive as an option
       shift: 0, // spacing for center image
-      padding: 0, // Padding between non center items
+      padding: 30, // Padding between non center items
       numVisible: 5, // Number of visible items in carousel
       fullWidth: false, // Change to full width styles
       indicators: false, // Toggle indicators
@@ -239,13 +294,6 @@
       onCycleTo: null
     }
     var instances = M.Carousel.init(elems, opt);
-
-
-    var c2 = document.querySelectorAll('.carousel2');
-    var opt2 = {
-      fullWidth: true
-    }
-    M.Carousel.init(c2, opt2);
   </script>
 
 
