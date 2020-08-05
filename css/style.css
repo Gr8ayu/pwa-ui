@@ -117,3 +117,8 @@ body {
 .carousel2 {
   height: 260px;
 }
+
+/* Cards from pages.html */
+#card-1 .col {
+  border-radius: 30px;
+}
