@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="../css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="../js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+  <link href="../css/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+
+<body class="bg-secondary darken-4">
+  <div id="preload" class=" preload valign-wrapper" style="height: 100vh; ">
+    <div class=" center " style="width: 100%;">
+      <div class="preloader-wrapper active">
+        <div class="spinner-layer spinner-red-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="loadedContent" class=" darken-4 fullH">
+    <div class="container  p-12 text-white">
+
+      <div class="row  mt-12 center leading-none">
+        <p class="p-0 m-0 center  text-4xl"><b>Sticky Mobile</b></p>
+
+        <p class="p-0 m-0 center  text-xs">Sticky Mobile is awesome</p>
+      </div>
+
+      <div class="row  mt-16 center">
+        <div class="col s4">
+          <i class="material-icons red mb-3 p-3 circle">search</i>
+          <span class="text-sm  ">Search</span>
+        </div>
+
+        <div class="col s4">
+          <i class="material-icons blue mb-3 p-3 circle">settings</i>
+          <br>
+          <span class="text-sm ">Settings</span>
+        </div>
+
+        <div class="col s4">
+          <i class="material-icons yellow mb-3 p-3 circle">panorama</i>
+          <span class="text-sm">Gallery</span>
+        </div>
+      </div>
+
+      <div class="row  mt-8 center">
+        <div class="col s4">
+          <i class="material-icons pink mb-3 p-3 circle">search</i>
+          <span class="text-sm  ">Search</span>
+        </div>
+
+        <div class="col s4">
+          <i class="material-icons brown mb-3 p-3 circle">settings</i>
+          <br>
+          <span class="text-sm ">Settings</span>
+        </div>
+
+        <div class="col s4">
+          <i class="material-icons indigo mb-3 p-3 circle">panorama</i>
+          <span class="text-sm">Gallery</span>
+        </div>
+      </div>
+
+      <div class="row  mt-8 center">
+        <div class="col s4">
+          <i class="material-icons grey mb-3 p-3 circle">search</i>
+          <span class="text-sm  ">Search</span>
+        </div>
+
+        <div class="col s4">
+          <i class="material-icons green lighten-4 mb-3 p-3 circle">settings</i>
+          <br>
+          <span class="text-sm ">Settings</span>
+        </div>
+
+        <div class="col s4">
+          <i class="material-icons orange mb-3 p-3 circle">panorama</i>
+          <span class="text-sm">Gallery</span>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+    <div class="container orange">
+      <div class="row  mt-12 center leading-none">
+        <p class="p-0 m-0 center  text-3xl"><b>Sticky Mobile</b></p>
+
+        <p class="p-0 m-0 center  text-sm">Sticky Mobile is awesome</p>
+      </div>
+
+    </div>
+
+
+    <!-- BottomBar -->
+    <div class="bottombar  bg-secondary">
+      <ul class="flex">
+        <li class="flex-1 mr-2 center ">
+          <a class="text-center block border border-gray-800 rounded  py-2  bg-secondary hover:bg-blue-700 text-white"
+            href="./walkthrough.html"><i class="material-icons">home</i>
+            <p>Home</p>
+          </a>
+
+        </li>
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
+            href="./projects.html"><i class="material-icons">search</i>
+            <p>Search</p>
+          </a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
+            href="pages.html"><i class="material-icons">panorama</i>
+            <p>Gallery</p>
+          </a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">person</i>
+            <p>Profile</p>
+          </a>
+        </li>
+        <li class="flex-1 ">
+          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
+            href="#"><i class="material-icons">settings</i>
+            <p>Settings</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <script>
+    window.onload = function () {
+      document.getElementById("preload").style.display = "none";
+      // document.getElementById("loadedContent").style.display = "block";
+    }
+  </script>
+
+
+</body>
+
+</html>
