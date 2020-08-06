@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="bg-secondary darken-4">
+<body class="bg-secondary ">
   <div id="preload" class=" preload valign-wrapper" style="height: 100vh; ">
     <div class=" center " style="width: 100%;">
       <div class="preloader-wrapper active">
@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <div id="loadedContent" class=" darken-4 fullH">
+  <div id="loadedContent" class="  fullH">
     <div class="container  p-12 text-white">
 
       <div class="row  mt-12 center leading-none">
@@ -109,59 +109,62 @@
 
     </div>
 
-    <div class="container px-6 orange" style="padding: auto;">
-      <div class="row  center white-text leading-none">
-        <p class="pt-6 m-0 center  text-3xl"><b>Sticky Mobile</b></p>
 
-        <div class="">
-          <p class="py-3 m-0 valign-wrapper green text-sm center ">Made with
-            <i class="material-icons red-text">favorite</i>
-            by Gr8ayu & Ankitz007
-          </p>
-          <p>the website is too awesome in dark theme. It looks crazy. Built with MAterializeCSs and Tailwind</p>
-        </div>
 
-      </div>
+    <!-- switch -->
+    <div class="switch ">
+      <label>
+
+        <input type="checkbox">
+        <span class="lever"></span>
+
+      </label>
 
     </div>
+
+
+
+    <!-- switch end -->
 
 
     <!-- BottomBar -->
     <div class="bottombar  bg-secondary">
       <ul class="flex">
         <li class="flex-1 mr-2 center ">
-          <a class="text-center block border border-gray-800 rounded  py-2  bg-secondary hover:bg-blue-700 text-white"
-            href="./walkthrough.html"><i class="material-icons">home</i>
+          <a class="text-center block  rounded  py-2  bg-secondary hover:bg-blue-700 text-white"
+            href="../walkthrough.html"><i class="material-icons">home</i>
             <p>Home</p>
           </a>
 
         </li>
         <li class="flex-1 mr-2">
-          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
-            href="./projects.html"><i class="material-icons">search</i>
+          <a class="text-center block  rounded py-2  bg-secondary hover:bg-blue-700 text-white"
+            href="../projects.html"><i class="material-icons">search</i>
             <p>Search</p>
           </a>
         </li>
         <li class="flex-1 mr-2">
-          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
-            href="pages.html"><i class="material-icons">panorama</i>
+          <a class="text-center block  rounded py-2  bg-secondary hover:bg-blue-700 text-white" href="pages.html"><i
+              class="material-icons">panorama</i>
             <p>Gallery</p>
           </a>
         </li>
         <li class="flex-1 mr-2">
-          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
-            href="#"><i class="material-icons">person</i>
+          <a class="text-center block  rounded py-2  bg-secondary hover:bg-blue-700 text-white" href="#"><i
+              class="material-icons">person</i>
             <p>Profile</p>
           </a>
         </li>
         <li class="flex-1 ">
-          <a class="text-center block border border-gray-800 rounded py-2  bg-secondary hover:bg-blue-700 text-white"
-            href="#"><i class="material-icons">settings</i>
+          <a class="text-center block  rounded py-2  bg-secondary hover:bg-blue-700 text-white" href="#"><i
+              class="material-icons">settings</i>
             <p>Settings</p>
           </a>
         </li>
       </ul>
     </div>
+
+    <!-- BottomBar end -->
 
 
   </div>
@@ -172,6 +175,39 @@
       // document.getElementById("loadedContent").style.display = "block";
     }
   </script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var checkbox = document.querySelector('input[type="checkbox"]');
+
+      checkbox.addEventListener('change', function () {
+        if (checkbox.checked) {
+          // do this
+          var items = document.getElementsByClassName("bg-secondary");
+
+          for (let index = 0; index < items.length; index++) {
+            const element = items[index];
+            element.style.backgroundColor = "black";
+            element.style.color = "white";
+          }
+
+
+        } else {
+          // do that
+          var items = document.getElementsByClassName("bg-secondary");
+
+          for (let index = 0; index < items.length; index++) {
+            const element = items[index];
+            element.style.backgroundColor = "white";
+            element.style.color = "black";
+          }
+
+        }
+      });
+    });
+  </script>
+
 
 
 </body>
